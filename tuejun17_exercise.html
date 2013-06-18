@@ -45,13 +45,12 @@
   			$(this).toggleClass('inner_blue');
     		});
     		$('.congrats_div').hide('slow');
-    		var counter = 0;
-    		$('div').each(function(index) {
-    		if ($(index).hasClass('inner_blue')===true)
-    			counter ++;
-    			if (counter===9)
-    				$(congrats_div).show('slow');
+    		$('.inner').on('click',function(){
+  				if ($('div').hasClass('.inner_blue')===true){
+  					console.log('true');
+  				}
     		});
+
     		$('.link_div').on('click',function(){
     			$('.inner').css({'background-color':'gray'})
     		});
