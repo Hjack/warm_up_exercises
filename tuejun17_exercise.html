@@ -46,8 +46,8 @@
     		});
     		$('.congrats_div').hide('slow');
     		$('.inner').on('click',function(){
-  				if ($('div').hasClass('.inner_blue')===true){
-  					console.log('true');
+  				if ($('.inner').not('.inner_blue').length===0){
+  					$('.congrats_div').show('slow');
   				}
     		});
 

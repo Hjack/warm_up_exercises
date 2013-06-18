@@ -18,14 +18,15 @@
 
 .inner_blue {
 	background-color: blue;
-	
+
 }
 
 .congrats_div {
 	background-color: gray;
 	height: 100px;
-	width: 300px;
+	width: 280px;
 	margin: 10px;
 	float: left;
 	text-align: center;
+	line-height: 75px;
 }
