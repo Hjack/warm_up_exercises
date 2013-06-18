@@ -1,0 +1,30 @@
+.inner {
+	background-color: gray;
+	height:80px;
+	width: 80px;
+	margin: 10px;
+	float: left;
+}
+
+.middle {
+	clear:right;
+
+}
+
+.link_div {
+	width: 300px;
+	text-align: center;
+}
+
+.inner_blue {
+	background-color: blue;
+}
+
+.congrats_div {
+	background-color: gray;
+	height: 100px;
+	width: 300px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="tuejun17_exercise.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1></h1>
+    <div class="container">
+      <div class="row span12">
+        <div class="outer_div"></div>
+        <div class="middle clearfix">
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	      </div>
+	       <div class="middle clearfix">
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	      </div>
+	       <div class="middle clearfix">
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	        <div class="inner"></div>
+	      </div>
+	      <div class="link_div">
+	      	<a href="#">Wipe</a>
+	      </div>
+	      <div class="congrats_div">Congrats!!</div>
+        
+      </div>
+
+
+
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('.inner').on('click',function(){
+  			$(this).toggleClass('inner_blue');
+    		});
+    		$('.congrats_div').hide('slow');
+    		var counter = 0;
+    		$('div').each(function(index) {
+    		if ($(index).hasClass('inner_blue')===true)
+    			counter ++;
+    			if (counter===9)
+    				$(congrats_div).show('slow');
+    		});
+    		$('.link_div').on('click',function(){
+    			$('.inner').css({'background-color':'gray'})
+    		});
+    	});
+    </script>
+
+  </body>
+</html>
+
